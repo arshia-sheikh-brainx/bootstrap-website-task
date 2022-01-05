@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Sofia&display=swap");
+:root {
+  --link-color: #3c7aae;
+  --color-text: #0d4f9a;
+  --color-body-text: #333333;
+  --border-color: #0d4f9a;
+  --green: #2bb34d;
+  --red: #db421e;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+body a {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: var(--link-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+.review-btn {
+  transform: rotate(270deg);
+  position: fixed;
+  top: 50%;
+  left: -32px;
+  z-index: 1;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: var(--color-text);
+}
+
+/* main section */
+#main {
+  border-color: var(--border-color) !important;
+  border-width: 5px !important;
+}
+
+/* breadcrumb */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: var(--link-color);
+}
+
+/* slider */
+.slider h1 {
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--color-text);
+  font-weight: 900;
+  text-shadow: 0.5px 0 currentColor;
+}
+/* review */
+.review a {
+  font-size: 13px;
+  line-height: 17px;
+}
+.review .fa-star {
+  font-size: 13px;
+  line-height: 17px;
+  color: #2bb34d;
+}
+
+/* carosual inner */
+
+#product-carousal .desktop-indicator {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#product-carousal .desktop-indicator [data-bs-target] {
+  height: 100%;
+  opacity: 1;
+  text-indent: 0;
+}
+#product-carousal .carousel-inner {
+  max-width: 530px;
+  max-height: 530px;
+}
+
+
+/* product description */
+.product-desc .desc-title {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 900;
+  color: var(--color-text);
+  text-shadow: 0.5px 0 currentColor;
+}
+.product-desc .desc-text {
+  color: var(--color-body-text);
+  font-weight: 500;
+}
+.product-desc .nav-link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid var(--border-color);
+  color: var(--border-color);
+  background-color: #ffffff;
+}
+
+.product-desc .nav-link.active {
+  
+  background-color: var(--border-color);
+  color: #ffffff;
+}
+.bag {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  /* min-width: 250px; */
+}
+.bag h3 {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 41px;
+  color: var(--color-text);
+}
+.bag p {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-body-text);
+}
+.bag .btn {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 22.4px;
+  background-color: var(--green);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.popular {
+  position: relative;
+  border-width: 4px;
+}
+.popular .banner {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  background-color: var(--border-color);
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  width: 100%;
+}
+.popular h3 {
+  margin-top: 30px;
+}
+
+.price {
+  padding-top: 10px;
+  color: var(--green) !important;
+  line-height: 35px;
+}
+.save {
+  color: var(--red);
+  font-size: 24px;
+}
+
+.gallery-header {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  color: var(--color-text);
+}
+#gallery img {
+  width: calc(100% / 5);
+  height: auto;
+  padding: 0 5px;
+  border-radius: 10px !important;
+  object-fit: cover;
+}
+
+
+
+/* 2nd section */
+#second-section h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+   
+}
+#second-section .content p , #second-section .content li {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+#second-section .content p{
+    font-weight:700;
+    margin-bottom: 0;
+}
+
+/* card section */
+#card{
+    margin-top: 50px;
+}
+#card .col{
+text-align: center;
+background-color: #003663;
+border:1px solid white;
+color: #ffffff;
+position: relative;
+padding: 40px 20px;
+}
+#card .col img{
+    position:absolute;
+    width: 50px;
+    height:50px;
+    top: -31px;
+    left: 42%;
+}
+/* review section */
+#review{
+    background-color: #0D4F9A;
+    color: #ffffff;
+    padding: 40px;
+}
+#review .heading{
+    font-size: 56px;
+    font-weight: 900;
+    text-align: right;
+  
+}
+#review .col:first-child{
+    border-right: 5px solid var(--green);
+}
+#review a{
+    cursor: pointer;
+    font-size: 22px;
+    color:var(--green);
+    font-weight: 500;
+    text-align: right;
+    width: 100%;
+    float: right;
+   
+
+}
+#review .stars{
+    font-size: 35px;
+    color: var(--green);
+    text-shadow: 0.5px 0 currentColor;
+}
+#review .quote , #review .writer , #review .green-text{
+    font-size: 24px;
+    font-weight: 700 ;
+}
+#review .green-text{
+    color:var(--green);
+}
+
+/* media querries */
+@media screen and (max-width: 992px) {
+  #product-carousal .carousel-control-next,   #product-carousal .carousel-control-prev {
+    height: 50%;
+    margin-top: 50%;
+  }
+  .bag,
+  .bag.popular {
+    padding: 10px 0;
+  }
+  .bag h3,
+  .bag p {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+  .save {
+    font-size: 13px;
+  }
+  .bag .btn {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 15.4px;
+  }
+  .bag-count {
+    font-size: 13px;
+    text-transform: lowercase;
+  }
+
+  /* review section */
+  #review .heading{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+}
+#review a{
+    text-align: left;
+}
+}
+@media screen and (max-width: 576px) {
+  .slider h1 {
+    font-size: 15px;
+    text-shadow: none;
+    padding-top: 20px;
+  }
+ 
+  .product-desc .nav-link {
+    font-size: 14px;
+    text-shadow: none;
+    font-weight: 500;
+  }
+
+/* card */
+#card .col img{
+    position:static;
+    margin-bottom: 10px;
+}
+  /* review section */
+  #review .heading{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+#review a{
+    text-align: center;
+}
+
+#review .col:first-child {
+    border:none;
+    padding: 0;
+    padding-right: 0 !important;
+}
+}
